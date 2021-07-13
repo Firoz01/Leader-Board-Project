@@ -144,3 +144,38 @@ hr{
     padding: 5px 10px;
     margin-right: 15px;
 }
+
+/*------------------------------------------
+           Media Queries
+---------------------------------------------- */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 88%;
+    }
+    .players, .blogs, .courses{ 
+        grid-template-columns: 1fr;
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .blog{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .courses{
+        place-items: center;
+
+    }
+    .course{
+        margin-bottom: 15px;
+    }
+}
+
+/* table devices */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    .players{
+        background-color: yellow;
+    }
+}
