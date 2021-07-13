@@ -154,7 +154,7 @@ hr{
         width: 88%;
     }
     .players, .blogs, .courses{ 
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1 , 1fr);
     }
     .player, .blog{
         flex-direction: column;
@@ -174,8 +174,14 @@ hr{
 
 /* table devices */
 
-@media only screen and (min-width:688px) and (max-width: 992px) {
-    .players{
-        background-color: yellow;
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1 , 1fr);
     }
 }
